@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fqc-B5-cIm">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recently Played-->
+        <scene sceneID="QCA-i7-hpC">
+            <objects>
+                <viewController id="e6J-fJ-9pV" customClass="ViewController" customModule="Interfaz_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hE-jh-O0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lxz-ll-vJA">
+                                <rect key="frame" x="0.0" y="186.5" width="414" height="635.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WZX-hl-J1o">
+                                    <size key="itemSize" width="360" height="560"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coverCell" id="glR-3n-86l" customClass="CoverCollectionViewCell" customModule="Design" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="38" width="360" height="560"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="560"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-oO-78K" customClass="CardImage" customModule="Interfaz_1" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="52" width="340" height="493"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EFf-0s-9NX">
+                                                    <rect key="frame" x="28" y="463.5" width="220.5" height="68.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lindsey Stirling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppd-cw-H4E">
+                                                            <rect key="frame" x="0.0" y="0.0" width="220.5" height="36.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <size key="shadowOffset" width="0.5" height="0.5"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roundtable Rival" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg4-X9-NYo">
+                                                            <rect key="frame" x="0.0" y="44.5" width="153" height="24"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <size key="shadowOffset" width="0.5" height="0.5"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="EFf-0s-9NX" secondAttribute="bottom" constant="20" id="5ZX-D9-p9x"/>
+                                            <constraint firstItem="Vvh-oO-78K" firstAttribute="top" secondItem="glR-3n-86l" secondAttribute="topMargin" id="Lyd-FN-0ng"/>
+                                            <constraint firstItem="Vvh-oO-78K" firstAttribute="leading" secondItem="glR-3n-86l" secondAttribute="leading" constant="10" id="boK-ns-Msa"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vvh-oO-78K" secondAttribute="bottom" constant="15" id="cht-ht-FHL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vvh-oO-78K" secondAttribute="trailing" constant="10" id="giH-mn-HZM"/>
+                                            <constraint firstItem="EFf-0s-9NX" firstAttribute="leading" secondItem="glR-3n-86l" secondAttribute="leadingMargin" constant="20" id="iXT-tc-xNM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="artistLabel" destination="ppd-cw-H4E" id="XIM-0Y-K97"/>
+                                            <outlet property="coverUIImageView" destination="Vvh-oO-78K" id="rAP-0p-F4B"/>
+                                            <outlet property="songLabel" destination="Dg4-X9-NYo" id="Dl1-Bj-D3c"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="e6J-fJ-9pV" id="t7r-RS-Lhk"/>
+                                    <outlet property="delegate" destination="e6J-fJ-9pV" id="P6P-yO-mu3"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lastest lyrics matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-II-uEP">
+                                <rect key="frame" x="20" y="140" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hTm-Am-aBM" firstAttribute="trailing" secondItem="Lxz-ll-vJA" secondAttribute="trailing" id="1hk-dL-9ON"/>
+                            <constraint firstItem="hTm-Am-aBM" firstAttribute="bottom" secondItem="Lxz-ll-vJA" secondAttribute="bottom" constant="40" id="BXX-4D-dxm"/>
+                            <constraint firstItem="hTm-Am-aBM" firstAttribute="trailing" secondItem="fBC-II-uEP" secondAttribute="trailing" constant="20" id="Hw2-Z9-jXG"/>
+                            <constraint firstItem="fBC-II-uEP" firstAttribute="leading" secondItem="hTm-Am-aBM" secondAttribute="leading" constant="20" id="MJm-AE-CpH"/>
+                            <constraint firstItem="Lxz-ll-vJA" firstAttribute="leading" secondItem="hTm-Am-aBM" secondAttribute="leading" id="eJA-mE-Y4r"/>
+                            <constraint firstItem="fBC-II-uEP" firstAttribute="top" secondItem="hTm-Am-aBM" secondAttribute="top" id="nPr-Bh-QxO"/>
+                            <constraint firstItem="Lxz-ll-vJA" firstAttribute="top" secondItem="fBC-II-uEP" secondAttribute="bottom" constant="25" id="p2g-DJ-18Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hTm-Am-aBM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recently Played" largeTitleDisplayMode="always" id="BNZ-D4-X5C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIO-1n-2Qc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="0.0"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="FwC-EW-e6J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fqc-B5-cIm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="0cO-M0-ajK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Vkj-Y5-NZQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e6J-fJ-9pV" kind="relationship" relationship="rootViewController" id="WJT-8m-tUx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PU2-oq-RHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home" width="16" height="16"/>
+        <image name="cover" width="666.66668701171875" height="900"/>
+    </resources>
+</document>
