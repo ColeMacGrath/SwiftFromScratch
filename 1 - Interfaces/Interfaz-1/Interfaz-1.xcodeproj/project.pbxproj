@@ -49,14 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3D10FDB2332BA290076E879 /* Utilitites */ = {
+		B3D10FDB2332BA290076E879 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				B3F982AF231F3F5600BA7977 /* AppDelegate.swift */,
 				B3F982C3231F463B00BA7977 /* CardImage.swift */,
 				B3F982B6231F3F5800BA7977 /* Assets.xcassets */,
 			);
-			path = Utilitites;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B3D10FDC2332BA880076E879 /* ViewControllers */ = {
@@ -110,7 +110,7 @@
 			children = (
 				B3D10FDC2332BA880076E879 /* ViewControllers */,
 				B3D10FDE2332BAB60076E879 /* Storyboards */,
-				B3D10FDB2332BA290076E879 /* Utilitites */,
+				B3D10FDB2332BA290076E879 /* Utilities */,
 				B3D10FDD2332BA9D0076E879 /* ViewCells */,
 				B3F982BB231F3F5800BA7977 /* Info.plist */,
 			);
