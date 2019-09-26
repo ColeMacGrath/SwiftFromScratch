@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B311BF1023218DD500A4A73F /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311BF0F23218DD500A4A73F /* ArtistViewController.swift */; };
 		B311BF122321946100A4A73F /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311BF112321946100A4A73F /* AlbumCollectionViewCell.swift */; };
 		B311BF14232195D700A4A73F /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311BF13232195D700A4A73F /* SongTableViewCell.swift */; };
+		B3424DFA233C3C620094A954 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3424DF8233C3C620094A954 /* ResultsViewController.swift */; };
+		B3424DFD233C3CFD0094A954 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3424DFC233C3CFD0094A954 /* SearchTableViewCell.swift */; };
+		B3424DFF233C3D1E0094A954 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3424DFE233C3D1E0094A954 /* SearchViewController.swift */; };
 		B3F982B0231F3F5600BA7977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F982AF231F3F5600BA7977 /* AppDelegate.swift */; };
 		B3F982B2231F3F5600BA7977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F982B1231F3F5600BA7977 /* ViewController.swift */; };
 		B3F982B5231F3F5600BA7977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F982B3231F3F5600BA7977 /* Main.storyboard */; };
@@ -20,9 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B311BF0F23218DD500A4A73F /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		B311BF112321946100A4A73F /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		B311BF13232195D700A4A73F /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		B3424DF8233C3C620094A954 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B3424DFC233C3CFD0094A954 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		B3424DFE233C3D1E0094A954 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B3F982AC231F3F5600BA7977 /* Interfaz-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interfaz-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F982AF231F3F5600BA7977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3F982B1231F3F5600BA7977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3D10FDB2332BA290076E879 /* Utilitites */ = {
+			isa = PBXGroup;
+			children = (
+				B3F982AF231F3F5600BA7977 /* AppDelegate.swift */,
+				B3F982C3231F463B00BA7977 /* CardImage.swift */,
+				B3F982B6231F3F5800BA7977 /* Assets.xcassets */,
+			);
+			path = Utilitites;
+			sourceTree = "<group>";
+		};
+		B3D10FDC2332BA880076E879 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3424DFE233C3D1E0094A954 /* SearchViewController.swift */,
+				B3424DF8233C3C620094A954 /* ResultsViewController.swift */,
+				B3F982B1231F3F5600BA7977 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3D10FDD2332BA9D0076E879 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B3F982C1231F45BD00BA7977 /* CoverCollectionViewCell.swift */,
+				B3424DFC233C3CFD0094A954 /* SearchTableViewCell.swift */,
+				B311BF112321946100A4A73F /* AlbumCollectionViewCell.swift */,
+				B311BF13232195D700A4A73F /* SongTableViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		B3D10FDE2332BAB60076E879 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B3F982B3231F3F5600BA7977 /* Main.storyboard */,
+				B3F982B8231F3F5800BA7977 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B3F982A3231F3F5600BA7977 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +108,11 @@
 		B3F982AE231F3F5600BA7977 /* Interfaz-1 */ = {
 			isa = PBXGroup;
 			children = (
-				B3F982AF231F3F5600BA7977 /* AppDelegate.swift */,
-				B3F982B1231F3F5600BA7977 /* ViewController.swift */,
-				B3F982C1231F45BD00BA7977 /* CoverCollectionViewCell.swift */,
-				B3F982C3231F463B00BA7977 /* CardImage.swift */,
-				B3F982B3231F3F5600BA7977 /* Main.storyboard */,
-				B3F982B6231F3F5800BA7977 /* Assets.xcassets */,
-				B3F982B8231F3F5800BA7977 /* LaunchScreen.storyboard */,
+				B3D10FDC2332BA880076E879 /* ViewControllers */,
+				B3D10FDE2332BAB60076E879 /* Storyboards */,
+				B3D10FDB2332BA290076E879 /* Utilitites */,
+				B3D10FDD2332BA9D0076E879 /* ViewCells */,
 				B3F982BB231F3F5800BA7977 /* Info.plist */,
-				B311BF0F23218DD500A4A73F /* ArtistViewController.swift */,
-				B311BF112321946100A4A73F /* AlbumCollectionViewCell.swift */,
-				B311BF13232195D700A4A73F /* SongTableViewCell.swift */,
 			);
 			path = "Interfaz-1";
 			sourceTree = "<group>";
@@ -150,13 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3424DFD233C3CFD0094A954 /* SearchTableViewCell.swift in Sources */,
 				B311BF122321946100A4A73F /* AlbumCollectionViewCell.swift in Sources */,
 				B3F982C2231F45BD00BA7977 /* CoverCollectionViewCell.swift in Sources */,
+				B3424DFF233C3D1E0094A954 /* SearchViewController.swift in Sources */,
 				B3F982B2231F3F5600BA7977 /* ViewController.swift in Sources */,
 				B311BF14232195D700A4A73F /* SongTableViewCell.swift in Sources */,
 				B3F982B0231F3F5600BA7977 /* AppDelegate.swift in Sources */,
 				B3F982C4231F463B00BA7977 /* CardImage.swift in Sources */,
-				B311BF1023218DD500A4A73F /* ArtistViewController.swift in Sources */,
+				B3424DFA233C3C620094A954 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

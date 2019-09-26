@@ -23,10 +23,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "coverCell", for: indexPath) as! CoverCollectionViewCell //Desencolamos la celda con el identificador y la convertimos a nuestra celda personalizada (CoverCollectionViewCell)
-        cell.coverUIImageView.image = #imageLiteral(resourceName: "cover") //Asigación de la imagen
+        cell.coverUIImageView.image = #imageLiteral(resourceName: "singer") //Asigación de la imagen
         //cell.coverUIImageView.image = UIImage(named: "cover") se puede insertar la imágen con el nombre
-        cell.artistLabel.text = "Lindsey Stirling" //Asignando el contenido de la primera etiqueta
-        cell.songLabel.text = "Roundtable Rival" //Asignando el contenido de la segunda etiqueta
+        cell.artistLabel.text = "Artist" //Asignando el contenido de la primera etiqueta
+        cell.songLabel.text = "Song" //Asignando el contenido de la segunda etiqueta
         
         return cell //Retornando la celda configurada
     }
