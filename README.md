@@ -14,6 +14,7 @@ Revisando temas básicos de programación en C++ y su compración con Swift
 |        Funciones         |
 |          Bucles          |
 
+<<<<<<< HEAD
 ##  [1 - Interfaces / WebScrapping](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/1%20-%20Interfaces/Interfaz-1)
 
 Creación de una aplicación de música para revisar el funcionamiento básico de las interfaces con restricciones, objetos básicos (UIImageView, Label, TableView, CollectionView y extensiones) así como paso de información entre controladores.  Scrapping de datos directos de la web para proveer a la aplicación de datos directos de internet.
@@ -30,3 +31,11 @@ Creación de una aplicación de música para revisar el funcionamiento básico d
 * [ScaleImageDown - workflow para el escalado de imágenes a @3x, @2x, @1x](google.com)
 * [CreateML - Playground para la creación de un modelo de CoreML a partir de un dataset](google.com)
 * [Create Image Classifier - Playground para la creación de un modelo de Vision a partir de un set de imágenes](google.com)
+=======
+##  [1 - Interfaces](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/1%20-%20Interfaces/Interfaz-1)
+
+Creación de una aplicación de música para revisar el funcionamiento básico de las interfaces con restricciones, objetos básicos (UIImageView, Label, TableView, CollectionView y extensiones)
+
+| ![alt text](https://user-images.githubusercontent.com/42153044/65188115-41954680-da33-11e9-8655-2a31ee8b3cdf.png) | ![alt text](https://user-images.githubusercontent.com/42153044/65188117-41954680-da33-11e9-9af1-530162409e17.png) |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+>>>>>>> a8e8a27d7be073e99a0658addfe94cf80b16f95d
