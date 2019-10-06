@@ -12,7 +12,7 @@ Revisando temas básicos de programación en C++ y su compración con Swift
 |        Funciones         |
 |          Bucles          |
 
-## [1 - Interfaces](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/1%20-%20Interfaces/Interfaz-1)
+## [1 - Interfaces / Web Scraping](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/1%20-%20Interfaces/Interfaz-1)
 
 Creación de una aplicación de música para revisar el funcionamiento básico de las interfaces con restricciones, objetos básicos (UIImageView, Label, TableView, CollectionView y extensiones) así como paso de información entre controladores.  Scrapping de datos directos de la web para proveer a la aplicación de datos directos de internet.
 
