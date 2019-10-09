@@ -12,7 +12,7 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    var urlString = "https://www.musixmatch.com/es"
+    var urlString = "https://www.musixmatch.com/es/search/Let%20it%20be"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,69 @@ class ViewController: NSViewController {
     func scrapeURL() {
         Alamofire.request(urlString).responseString { response in
             if let htmlString = response.result.value {
-                self.parseResultsPopular(html: htmlString)
+                //self.parseResultsPopular(html: htmlString)
+                //self.parseSong(html: htmlString)
+                self.parseResults(html: htmlString)
             }
+        }
+    }
+    
+    func parseSong(html: String) {
+        do {
+            let htmlDocument = try Kanna.HTML(html: html, encoding: .utf8)
+            for span in htmlDocument.css("span") {
+                if span["class"] == "lyrics__content__ok" {
+                    print(span.text?.trim ?? "")
+                }
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
+    func parseResults(html: String) {
+        do {
+            let htmlDocument = try Kanna.HTML(html: html, encoding: .utf8)
+            for div in htmlDocument.css("div") {
+                if div["class"] == "box-content" {
+                    for ul in div.css("ul") {
+                        if ul["class"] == "tracks list" {
+                            for li in ul.css("li") {
+                                if li["class"] == "showArtist showCoverart" {
+                                    for a in li.css("a") {
+                                        if a["class"] == "title" {
+                                            var link = "https://www.musixmatch.com"
+                                            link += a["href"]?.trim ?? ""
+                                            print(link)
+                                            for span in a.css("span") {
+                                                print(span.text?.trim ?? "")
+                                            }
+                                        }
+                                        
+                                        if a["class"] == "artist" {
+                                            print(a.text?.trim ?? "")
+                                        }
+                                    }
+                                }
+                                
+                                for div in li.css("div") {
+                                    if div["class"] == "media-card-picture" {
+                                        for img in div.css("img") {
+                                            var imageLink = img["srcset"]?.trim ?? ""
+                                            if let spaceRange = imageLink.range(of: " ") {
+                                              imageLink.removeSubrange(spaceRange.lowerBound..<imageLink.endIndex)
+                                                print(imageLink)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } catch {
+            print(error)
         }
     }
     
