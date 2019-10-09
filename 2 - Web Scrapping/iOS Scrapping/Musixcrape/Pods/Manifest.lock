@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Kanna (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kanna
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kanna
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+
+PODFILE CHECKSUM: 441c6524243933e132b46b3f702e26d121652192
+
+COCOAPODS: 1.5.2
