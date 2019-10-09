@@ -20,6 +20,7 @@
 		B3C222F4234E7ED00088C79E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C222F3234E7ED00088C79E /* SearchTableViewCell.swift */; };
 		B3C222F6234E7EE90088C79E /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C222F5234E7EE90088C79E /* AlbumCollectionViewCell.swift */; };
 		B3C222F8234E7F020088C79E /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C222F7234E7F020088C79E /* SongTableViewCell.swift */; };
+		B3C22300234E89320088C79E /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C222FF234E89320088C79E /* LyricsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B3C222F3234E7ED00088C79E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		B3C222F5234E7EE90088C79E /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		B3C222F7234E7F020088C79E /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		B3C222FF234E89320088C79E /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				B3C222D8234E7DF80088C79E /* ViewController.swift */,
 				B3C222EB234E7E570088C79E /* ResultsViewController.swift */,
 				B3C222ED234E7E6A0088C79E /* SearchViewController.swift */,
+				B3C222FF234E89320088C79E /* LyricsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C222F6234E7EE90088C79E /* AlbumCollectionViewCell.swift in Sources */,
+				B3C22300234E89320088C79E /* LyricsViewController.swift in Sources */,
 				B3C222EE234E7E6A0088C79E /* SearchViewController.swift in Sources */,
 				B3C222F8234E7F020088C79E /* SongTableViewCell.swift in Sources */,
 				B3C222F2234E7EB10088C79E /* CoverCollectionViewCell.swift in Sources */,
