@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() { //viewDidLoad, método que se ejecuta antes de que se cargue la vista
         super.viewDidLoad()
         self.navigationController?.navigationBar.shadowImage = UIImage() //Remueve la línea de la barra de título

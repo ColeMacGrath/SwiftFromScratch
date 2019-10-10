@@ -11,7 +11,7 @@ import UIKit
 class LyricsViewController: UIViewController {
 
     @IBOutlet weak var albumImageView: UIImageView!
-    @IBOutlet weak var albumLabel: UILabel!
+    @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var lyricsTextView: UITextView!
     //lyricsVC

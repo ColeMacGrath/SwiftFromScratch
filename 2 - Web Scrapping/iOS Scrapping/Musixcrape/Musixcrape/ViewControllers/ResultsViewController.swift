@@ -11,7 +11,8 @@ import UIKit
 class ResultsViewController: UIViewController {
     
     var searchParameter: String! // Variable a ser asginada a partir de la información obtenida en el controlador pasado
-
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = searchParameter // Se asigna el título a partir de la variable asiganada en el controlador pasado

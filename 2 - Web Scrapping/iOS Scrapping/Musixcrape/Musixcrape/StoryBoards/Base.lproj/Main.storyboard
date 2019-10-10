@@ -106,6 +106,9 @@
                         <viewLayoutGuide key="safeArea" id="6oL-Db-Eug"/>
                     </view>
                     <navigationItem key="navigationItem" title="Populares en tu región" largeTitleDisplayMode="always" id="WSb-IN-WRP"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Rjz-KA-7Vy" id="Ofc-wZ-67v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1y-O0-O9Z" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,6 +261,9 @@
                         <viewLayoutGuide key="safeArea" id="kBw-kZ-cJP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Let it be" id="z8d-Ec-1lv"/>
+                    <connections>
+                        <outlet property="tableView" destination="b2C-vD-C2e" id="ula-C8-am8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JkX-Kc-fjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +295,7 @@
                     <tabBarItem key="tabBarItem" title="Popular" selectedImage="music.house.fill" catalog="system" id="56g-WO-YZl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TkR-Tp-b0E">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -369,9 +375,9 @@
                     </view>
                     <connections>
                         <outlet property="albumImageView" destination="NIm-Pt-nUz" id="iCc-Iu-diq"/>
-                        <outlet property="albumLabel" destination="2Tv-CY-Rg4" id="MNo-FV-s2N"/>
                         <outlet property="artistLabel" destination="RaN-7Y-ecZ" id="YrV-mz-YUj"/>
                         <outlet property="lyricsTextView" destination="b03-g4-DKm" id="KZa-Tf-Aie"/>
+                        <outlet property="songLabel" destination="2Tv-CY-Rg4" id="MNo-FV-s2N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5p-5s-Q4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
