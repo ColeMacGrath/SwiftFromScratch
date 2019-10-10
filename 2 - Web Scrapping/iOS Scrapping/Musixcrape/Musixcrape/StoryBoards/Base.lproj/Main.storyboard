@@ -107,7 +107,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Populares en tu región" largeTitleDisplayMode="always" id="WSb-IN-WRP"/>
                     <connections>
-                        <outlet property="collectionView" destination="Rjz-KA-7Vy" id="Ofc-wZ-67v"/>
+                        <outlet property="collectionView" destination="Rjz-KA-7Vy" id="PQB-qg-XnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1y-O0-O9Z" sceneMemberID="firstResponder"/>
@@ -146,7 +146,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar por..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="COp-Cv-VYO">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="27"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-M9-baD">
                                         <rect key="frame" x="374" y="0.0" width="20" height="27"/>
@@ -179,7 +179,7 @@
                     <tabBarItem key="tabBarItem" title="Buscar" selectedImage="magnifyingglass" catalog="system" id="drn-N3-n7D"/>
                     <connections>
                         <outlet property="searchTextField" destination="COp-Cv-VYO" id="cf8-Ve-22e"/>
-                        <segue destination="ThK-o1-Jvt" kind="show" identifier="showResultsNV" id="BBN-ek-RDb"/>
+                        <segue destination="ThK-o1-Jvt" kind="presentation" identifier="showResultsNV" modalPresentationStyle="fullScreen" id="BBN-ek-RDb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vko-a6-teI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -191,11 +191,11 @@
             <objects>
                 <viewController id="e5k-wH-Qxr" customClass="ResultsViewController" customModule="Musixcrape" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="esI-O7-6vo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-vD-C2e">
-                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-vD-C2e">
+                                <rect key="frame" x="0.0" y="148.5" width="414" height="713.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="songCell" rowHeight="100" id="e2J-1r-MMA" customClass="SearchTableViewCell" customModule="Musixcrape" customModuleProvider="target">
@@ -205,12 +205,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="uUk-0d-3bS">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="uUk-0d-3bS" customClass="CardImage" customModule="Musixcrape" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="15" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="4HE-lh-KmY"/>
                                                         <constraint firstAttribute="width" constant="70" id="Y87-5B-sW0"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-7g-Wxp">
                                                     <rect key="frame" x="100" y="21" width="284" height="58"/>
@@ -262,7 +270,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Let it be" id="z8d-Ec-1lv"/>
                     <connections>
-                        <outlet property="tableView" destination="b2C-vD-C2e" id="ula-C8-am8"/>
+                        <outlet property="tableView" destination="b2C-vD-C2e" id="Kel-Zq-U0F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JkX-Kc-fjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -276,7 +284,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UgC-rV-iEs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="jlP-EM-6Iq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -316,19 +324,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6sN-uh-OmF">
-                                <rect key="frame" x="30" y="64" width="374" height="80"/>
+                                <rect key="frame" x="30" y="74" width="374" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-Pt-nUz">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singer" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-Pt-nUz" customClass="CardImage" customModule="Musixcrape" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="NIm-Pt-nUz" secondAttribute="height" multiplier="1:1" id="LzL-Po-EQe"/>
                                             <constraint firstAttribute="height" constant="80" id="h39-oa-4bM"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mla-Yv-lce">
                                         <rect key="frame" x="88" y="11" width="286" height="58.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-CY-Rg4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-CY-Rg4">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,14 +361,14 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Cargando letras..." translatesAutoresizingMaskIntoConstraints="NO" id="b03-g4-DKm">
-                                <rect key="frame" x="10" y="154" width="394" height="708"/>
+                                <rect key="frame" x="10" y="164" width="394" height="698"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-qL-fjt">
-                                <rect key="frame" x="357" y="44" width="37" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-qL-fjt">
+                                <rect key="frame" x="357" y="49" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="72q-7l-xXP" eventType="touchUpInside" id="sZE-EB-aH1"/>
@@ -363,19 +379,21 @@
                         <constraints>
                             <constraint firstItem="b03-g4-DKm" firstAttribute="top" secondItem="6sN-uh-OmF" secondAttribute="bottom" constant="10" id="DSv-4y-Nf4"/>
                             <constraint firstItem="6sN-uh-OmF" firstAttribute="leading" secondItem="Bl3-X8-gcp" secondAttribute="leading" constant="30" id="EPP-7m-JAV"/>
-                            <constraint firstItem="6sN-uh-OmF" firstAttribute="top" secondItem="Bl3-X8-gcp" secondAttribute="top" constant="20" id="Jpv-rT-BxE"/>
+                            <constraint firstItem="6sN-uh-OmF" firstAttribute="top" secondItem="Bl3-X8-gcp" secondAttribute="top" constant="30" id="Jpv-rT-BxE"/>
                             <constraint firstItem="Bl3-X8-gcp" firstAttribute="bottom" secondItem="b03-g4-DKm" secondAttribute="bottom" id="Po5-nd-wqK"/>
                             <constraint firstItem="Bl3-X8-gcp" firstAttribute="trailing" secondItem="b03-g4-DKm" secondAttribute="trailing" constant="10" id="UvI-MJ-Vo3"/>
                             <constraint firstItem="Bl3-X8-gcp" firstAttribute="trailing" secondItem="6sN-uh-OmF" secondAttribute="trailing" constant="10" id="VXQ-zP-gTn"/>
                             <constraint firstItem="b03-g4-DKm" firstAttribute="leading" secondItem="Bl3-X8-gcp" secondAttribute="leading" constant="10" id="aiy-Qv-zPe"/>
+                            <constraint firstItem="bA8-qL-fjt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bl3-X8-gcp" secondAttribute="leading" symbolic="YES" id="ilB-E7-Snd"/>
                             <constraint firstItem="Bl3-X8-gcp" firstAttribute="trailing" secondItem="bA8-qL-fjt" secondAttribute="trailing" constant="20" id="oMq-7c-LOC"/>
-                            <constraint firstItem="bA8-qL-fjt" firstAttribute="top" secondItem="Bl3-X8-gcp" secondAttribute="top" id="wdu-jL-g8e"/>
+                            <constraint firstItem="bA8-qL-fjt" firstAttribute="top" secondItem="Bl3-X8-gcp" secondAttribute="top" constant="5" id="wdu-jL-g8e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bl3-X8-gcp"/>
                     </view>
                     <connections>
                         <outlet property="albumImageView" destination="NIm-Pt-nUz" id="iCc-Iu-diq"/>
                         <outlet property="artistLabel" destination="RaN-7Y-ecZ" id="YrV-mz-YUj"/>
+                        <outlet property="doneButton" destination="bA8-qL-fjt" id="ccM-Kq-zsf"/>
                         <outlet property="lyricsTextView" destination="b03-g4-DKm" id="KZa-Tf-Aie"/>
                         <outlet property="songLabel" destination="2Tv-CY-Rg4" id="MNo-FV-s2N"/>
                     </connections>
