@@ -16,11 +16,13 @@ Revisando temas básicos de programación en C++ y su compración con Swift
 
 Creación de una aplicación de música para revisar el funcionamiento básico de las interfaces con restricciones, objetos básicos (UIImageView, Label, TableView, CollectionView y extensiones) así como paso de información entre controladores.  Scrapping de datos directos de la web para proveer a la aplicación de datos directos de internet.
 
+## Screenshots
+
 | ![alt text](https://user-images.githubusercontent.com/42153044/65650765-c81ccb80-dfd1-11e9-94fa-c05ef8235b08.png) | ![alt text](https://user-images.githubusercontent.com/42153044/65650766-c8b56200-dfd1-11e9-846a-72e82cf38983.png) | ![alt text](https://user-images.githubusercontent.com/42153044/65650767-c8b56200-dfd1-11e9-8c00-3a16d87ba260.png) |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![alt text](https://user-images.githubusercontent.com/42153044/65650768-c8b56200-dfd1-11e9-930a-1d7a016bd5a3.png) | ![alt text](https://user-images.githubusercontent.com/42153044/65650769-c8b56200-dfd1-11e9-8712-4cda7fed8792.png) | ![alt text](https://user-images.githubusercontent.com/42153044/65650770-c8b56200-dfd1-11e9-96c6-afc0838f48f1.png) |
 
-## [3 - Machine Learning](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/1%20-%20Interfaces/Interfaz-1)
+## [3 - Machine Learning](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/3%20-%20HousePrice)
 
 Aplicación basada en un UIPageViewController dónde en base a ciertos parámetros se busca predecir el precio de venta de una casa con CoreML.
 
@@ -52,6 +54,8 @@ Pipeline Regressor
 #### Output
 
 * Value -> Double (precio estimado)
+
+## Screenshots
 
 | ![alt text](https://user-images.githubusercontent.com/42153044/66789815-f1cf6100-eeb2-11e9-92cc-a03c6e678832.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789816-f1cf6100-eeb2-11e9-9630-5a45e613860e.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789817-f1cf6100-eeb2-11e9-9cc2-9bb36bba789e.png) |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
