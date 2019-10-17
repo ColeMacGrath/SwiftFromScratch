@@ -62,6 +62,62 @@ Pipeline Regressor
 | ![alt text](https://user-images.githubusercontent.com/42153044/66789818-f1cf6100-eeb2-11e9-80d8-ad4da2a16107.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789819-f1cf6100-eeb2-11e9-81a2-b6f748b1925d.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789820-f267f780-eeb2-11e9-82cc-92675a4bcf42.png) |
 |                                                              | ![alt text](https://user-images.githubusercontent.com/42153044/66789822-f267f780-eeb2-11e9-9ba2-da6efe92f8c8.png) |                                                              |
 
+## [4 - Machine Learning en imágenes](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/3%20-%20HousePrice)
+
+Aplicación basada en CoreML entrenada con el imageset de [animals10](https://www.kaggle.com/alessiocorrado99/animals10) para determinar el animal con una imagen
+
+## Acerca del modelo
+
+The model was trained with more than 20,000 images
+
+#### Nombre
+
+[AnimalsImageClassifier.mlmodel](www.google.com)
+
+#### Tipo
+
+Image Classifier
+
+#### Tamaño
+
+148 kb
+
+#### Descripción
+
+A machine learning model that has been trained to recognize images. When you give it an image, it responds with a label for that image.
+
+#### Parámetros
+
+##### Inputs:
+
+- Image (Color 299x299): Input image to be classified
+
+#### Outputs
+
+- classLabelProbs (String -> Double): Probability of each category
+- classLabel (String): Most likely image category
+
+## Animales a determinar
+
+|  Animal  | Número de imágenes | Tamaño original |
+| :------: | :----------------: | :-------------: |
+|  Perro   |        4908        |     61.3 MB     |
+| Caballo  |        2673        |     43.6 MB     |
+| Elefante |        1484        |      62 MB      |
+| Mariposa |        2465        |     73.1 MB     |
+| Gallina  |        3672        |     68.6 MB     |
+|   Gato   |        1942        |    158.7 MB     |
+|   Vaca   |        2040        |     32.2 MB     |
+|  Oveja   |        1943        |      69 MB      |
+|  Araña   |        5134        |     99.9 MB     |
+| Ardilla  |        2014        |     31.7 MB     |
+
+## Screenshots
+
+| ![alt text](https://user-images.githubusercontent.com/42153044/66969556-a43c2b00-f04f-11e9-96fb-0559a24a7d51.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66969557-a4d4c180-f04f-11e9-9d66-22962b582c0e.png) |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| ![alt text](https://user-images.githubusercontent.com/42153044/66969558-a4d4c180-f04f-11e9-9749-be4c27489ac4.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66969559-a56d5800-f04f-11e9-9315-c8427cb27646.png) |
+
 # Utilidades
 
 * [Pixaby - Galería de imágenes en alta resolución](https://pixabay.com)
