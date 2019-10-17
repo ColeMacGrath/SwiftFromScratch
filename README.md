@@ -66,9 +66,9 @@ Pipeline Regressor
 
 Aplicación basada en CoreML entrenada con el imageset de [animals10](https://www.kaggle.com/alessiocorrado99/animals10) para determinar el animal con una imagen
 
-## Acerca del modelo
+### Acerca del modelo
 
-The model was trained with more than 20,000 images
+El modelo fue entrenado con mas de 20,000 imágenes
 
 #### Nombre
 
