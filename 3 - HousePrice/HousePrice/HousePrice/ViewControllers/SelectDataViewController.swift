@@ -60,6 +60,12 @@ class SelectDataViewController: UIPageViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.white
         self.view.addSubview(pageControl)
     }
+    
+    func nextPage() {
+        guard let currentViewController = self.viewControllers?.first else { return }
+        guard let nextViewController = dataSource?.pageViewController(self, viewControllerAfter: currentViewController) else { return }
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+    }
 
 }
 

@@ -17,10 +17,18 @@ class YearViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIButton) {
+    override func viewWillDisappear(_ animated: Bool) {
+        _ = setInformation()
+    }
+    
+    func setInformation() -> SelectDataViewController? {
+        guard let parent = self.parent as? SelectDataViewController else { return nil }
         let year = Calendar.current.component(.year, from: datePicker.date)
-        
-        guard let parent = self.parent as? SelectDataViewController else { return }
         parent.constructionDate = year
+        return parent
+    }
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        setInformation()?.nextPage()
     }
 }

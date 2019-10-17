@@ -18,16 +18,24 @@ class BathroomsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        _ = setInformation()
+    }
+    
+    func setInformation() -> SelectDataViewController? {
+        guard let parent = self.parent as? SelectDataViewController else { return nil }
+        guard let total = Int(quantityTextField.text!) else { return nil }
+        parent.totalBathrooms = total
+        return parent
+    }
+    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         var quantity = quantityTextField.text!
         if sender.tag != 10 {
             quantity += String(sender.tag)
             quantityTextField.text = quantity
         } else {
-            guard let parent = self.parent as? SelectDataViewController else { return }
-            if let total = Int(quantity) {
-                parent.totalBathrooms = total
-            }
+            setInformation()?.nextPage()
         }
     }
 }

@@ -16,6 +16,17 @@ class BeedromsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        _ = setInformation()
+    }
+    
+    func setInformation() -> SelectDataViewController? {
+        guard let parent = self.parent as? SelectDataViewController else { return nil }
+        guard let quantity = Int(quantityTextField.text!) else { return nil }
+        parent.totalBedrooms = quantity
+        return parent
+    }
 
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         var quantity = quantityTextField.text!
@@ -24,10 +35,7 @@ class BeedromsViewController: UIViewController {
             quantity += String(sender.tag)
             quantityTextField.text = quantity
         } else {
-            guard let parent = self.parent as? SelectDataViewController else { return }
-            if let total = Int(quantity) {
-                parent.totalBedrooms = total
-            }
+            setInformation()?.nextPage()
         }
         
     }

@@ -17,17 +17,25 @@ class HouseSizeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        _ = setInformation()
+    }
+    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         var size = sizeTextField.text!
         if sender.tag != 10 {
             size += String(sender.tag)
             sizeTextField.text = size
         } else {
-            guard let parent = self.parent as? SelectDataViewController else { return }
-            if let total = Int(size) {
-                parent.houseSize = total
-            }
+            setInformation()?.nextPage()
         }
+    }
+    
+    func setInformation() -> SelectDataViewController? {
+        guard let parent = self.parent as? SelectDataViewController else { return nil }
+        guard let total = Int(sizeTextField.text!) else { return nil }
+        parent.houseSize = total
+        return parent
     }
 
 }

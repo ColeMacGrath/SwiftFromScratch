@@ -17,6 +17,17 @@ class GaragePlacesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        _ = setInformation()
+    }
+    
+    func setInformation() -> SelectDataViewController? {
+        guard let parent = self.parent as? SelectDataViewController else { return nil }
+        guard let total = Int(totalTextField.text!) else { return nil }
+        parent.garagePlaces = total
+        return parent
+    }
+    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         guard var total = totalTextField.text else { return }
         
@@ -24,10 +35,8 @@ class GaragePlacesViewController: UIViewController {
             total += String(sender.tag)
             totalTextField.text = total
         } else {
-            guard let parent = self.parent as? SelectDataViewController else { return }
-            if let total = Int(total) {
-                parent.garagePlaces = total
-            }
+            setInformation()?.nextPage()
+            
         }
         
     }

@@ -91,7 +91,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="h3Y-xM-ldQ"/>
                     <connections>
-                        <segue destination="CaZ-vo-EWR" kind="presentation" identifier="showPageVC" modalPresentationStyle="fullScreen" id="4o7-W6-bsC"/>
+                        <segue destination="CaZ-vo-EWR" kind="presentation" identifier="showPageVC" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="4o7-W6-bsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

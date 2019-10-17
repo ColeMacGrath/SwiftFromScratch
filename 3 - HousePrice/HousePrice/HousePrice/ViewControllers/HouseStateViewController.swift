@@ -39,6 +39,7 @@ extension HouseStateViewController: UITableViewDelegate, UITableViewDataSource {
             cell.accessoryType = .checkmark
         }
         parent.houseCondition = indexPath.row
+        parent.nextPage()
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
