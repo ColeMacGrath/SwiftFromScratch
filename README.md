@@ -62,7 +62,7 @@ Pipeline Regressor
 | ![alt text](https://user-images.githubusercontent.com/42153044/66789818-f1cf6100-eeb2-11e9-80d8-ad4da2a16107.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789819-f1cf6100-eeb2-11e9-81a2-b6f748b1925d.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66789820-f267f780-eeb2-11e9-82cc-92675a4bcf42.png) |
 |                                                              | ![alt text](https://user-images.githubusercontent.com/42153044/66789822-f267f780-eeb2-11e9-9ba2-da6efe92f8c8.png) |                                                              |
 
-## [4 - Machine Learning en imágenes](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/3%20-%20HousePrice)
+## [4 - Machine Learning en imágenes](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/4%20-%20Image%20Predictor)
 
 Aplicación basada en CoreML entrenada con el imageset de [animals10](https://www.kaggle.com/alessiocorrado99/animals10) para determinar el animal con una imagen
 
@@ -72,7 +72,7 @@ The model was trained with more than 20,000 images
 
 #### Nombre
 
-[AnimalsImageClassifier.mlmodel](www.google.com)
+[AnimalsImageClassifier.mlmodel](https://github.com/ColeMacGrath/SwiftFromScratch/blob/master/4%20-%20Image%20Predictor/AnimalsImageClassifier.mlmodel)
 
 #### Tipo
 
