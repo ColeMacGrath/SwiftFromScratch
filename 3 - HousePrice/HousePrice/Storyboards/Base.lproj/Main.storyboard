@@ -1111,27 +1111,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF8-yU-aX8">
-                                <rect key="frame" x="10" y="521.5" width="394" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Recalcular">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="recalculateButtonPressed:" destination="yAh-ND-c31" eventType="touchUpInside" id="hWa-VI-63E"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vRg-oh-bRU" firstAttribute="top" secondItem="qH6-Tv-jTu" secondAttribute="top" constant="-5" id="5C9-9n-KP4"/>
-                            <constraint firstItem="FR4-vH-nPq" firstAttribute="trailing" secondItem="uF8-yU-aX8" secondAttribute="trailing" constant="10" id="LSn-bx-4Ab"/>
                             <constraint firstAttribute="bottom" secondItem="vRg-oh-bRU" secondAttribute="bottom" constant="-5" id="SXT-Dh-PD8"/>
                             <constraint firstItem="vRg-oh-bRU" firstAttribute="trailing" secondItem="FR4-vH-nPq" secondAttribute="trailing" id="bDG-oc-9cB"/>
                             <constraint firstItem="se6-CW-zDy" firstAttribute="centerY" secondItem="qH6-Tv-jTu" secondAttribute="centerY" multiplier="0.9" id="g1S-EW-2PR"/>
                             <constraint firstItem="vRg-oh-bRU" firstAttribute="leading" secondItem="FR4-vH-nPq" secondAttribute="leading" id="hjJ-79-52v"/>
-                            <constraint firstItem="uF8-yU-aX8" firstAttribute="top" secondItem="se6-CW-zDy" secondAttribute="bottom" constant="15" id="m7Q-Tb-6Mk"/>
-                            <constraint firstItem="uF8-yU-aX8" firstAttribute="leading" secondItem="FR4-vH-nPq" secondAttribute="leading" constant="10" id="pBy-im-PiZ"/>
                             <constraint firstItem="se6-CW-zDy" firstAttribute="centerX" secondItem="qH6-Tv-jTu" secondAttribute="centerX" id="tSe-ai-TkT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FR4-vH-nPq"/>

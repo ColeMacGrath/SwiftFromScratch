@@ -22,26 +22,20 @@ class ResultViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let parent = self.parent as? SelectDataViewController {
-            /*print("""
+        /*if let parent = self.parent as? SelectDataViewController {
+            print("""
                 Tamaño de la casa: \(parent.houseSize)
                 Estado de la casa: \(parent.houseCondition)
                 Año de construcción: \(parent.constructionDate)
                 Número de cuartos: \(parent.totalBedrooms)
                 Número de baños: \(parent.totalBathrooms)
                 Espacio de garage: \(parent.garagePlaces)
-                """)*/
-        }
+                """)
+        }*/
     }
     
     @IBAction func newEstimationButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func recalculateButtonPressed(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Recalculando", message: "Se está recalculando", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true)
     }
     
 }

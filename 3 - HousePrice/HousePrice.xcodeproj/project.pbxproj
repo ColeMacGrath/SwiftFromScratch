@@ -15,6 +15,7 @@
 		B35E24472353ED8D0019AAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35E24452353ED8D0019AAC8 /* LaunchScreen.storyboard */; };
 		B35E2453235401570019AAC8 /* SelectDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E2452235401570019AAC8 /* SelectDataViewController.swift */; };
 		B38A59EA235535D300A7A2EC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B38A59E9235535D300A7A2EC /* IQKeyboardManagerSwift */; };
+		B3F2D2CF2358F11000A93D89 /* HousePriceModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3F2D2CE2358F11000A93D89 /* HousePriceModel.mlmodel */; };
 		B3F80C54235504A300ED0FB7 /* GaragePlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F80C53235504A300ED0FB7 /* GaragePlacesViewController.swift */; };
 		B3F80C5623550E7000ED0FB7 /* HouseStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F80C5523550E6F00ED0FB7 /* HouseStateViewController.swift */; };
 		B3F80C5823550FE300ED0FB7 /* YearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F80C5723550FE300ED0FB7 /* YearViewController.swift */; };
@@ -35,6 +36,7 @@
 		B35E24462353ED8D0019AAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35E24482353ED8D0019AAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B35E2452235401570019AAC8 /* SelectDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDataViewController.swift; sourceTree = "<group>"; };
+		B3F2D2CE2358F11000A93D89 /* HousePriceModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HousePriceModel.mlmodel; path = Utilities/HousePriceModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		B3F80C53235504A300ED0FB7 /* GaragePlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GaragePlacesViewController.swift; path = HousePrice/ViewControllers/GaragePlacesViewController.swift; sourceTree = SOURCE_ROOT; };
 		B3F80C5523550E6F00ED0FB7 /* HouseStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseStateViewController.swift; sourceTree = "<group>"; };
 		B3F80C5723550FE300ED0FB7 /* YearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		B35E2451235400250019AAC8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B3F2D2CE2358F11000A93D89 /* HousePriceModel.mlmodel */,
 				B35E24502354001D0019AAC8 /* Delegates */,
 				B35E24432353ED8D0019AAC8 /* Assets.xcassets */,
 				B3FC7BCE2354C4D000891A14 /* Util.swift */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F2D2CF2358F11000A93D89 /* HousePriceModel.mlmodel in Sources */,
 				B3F80C5E2355140100ED0FB7 /* BathroomsViewController.swift in Sources */,
 				B3F80C54235504A300ED0FB7 /* GaragePlacesViewController.swift in Sources */,
 				B3F80C5A2355110900ED0FB7 /* BeedromsViewController.swift in Sources */,
