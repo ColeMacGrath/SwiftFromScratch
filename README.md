@@ -116,7 +116,7 @@ A machine learning model that has been trained to recognize images. When you giv
 
 | ![alt text](https://user-images.githubusercontent.com/42153044/66969556-a43c2b00-f04f-11e9-96fb-0559a24a7d51.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66969557-a4d4c180-f04f-11e9-9d66-22962b582c0e.png) |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| ![alt text](https://user-images.githubusercontent.com/42153044/66969558-a4d4c180-f04f-11e9-9749-be4c27489ac4.png) | ![alt text](https://user-images.githubusercontent.com/42153044/66969559-a56d5800-f04f-11e9-9315-c8427cb27646.png) |
+| ![alt text](https://user-images.githubusercontent.com/42153044/67133718-b8a93080-f1d3-11e9-94f9-98964723e1b2.png) | ![alt text](https://user-images.githubusercontent.com/42153044/67133719-b8a93080-f1d3-11e9-87d4-55be10f0cb85.png) |
 
 # Utilidades
 
