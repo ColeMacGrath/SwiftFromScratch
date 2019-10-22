@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BabyListener" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="BabyListener" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8n-Pj-kZa" customClass="CardView" customModule="BabyListener" customModuleProvider="target">
+                                <rect key="frame" x="82" y="278" width="250" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhn-Re-9yM" customClass="CardView" customModule="BabyListener" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="25" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QI8-du-PiA" customClass="CardView" customModule="BabyListener" customModuleProvider="target">
+                                                <rect key="frame" x="60" y="60" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.94903248549999997" green="0.27725458149999999" blue="0.42389130590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QI8-du-PiA" secondAttribute="height" multiplier="1:1" id="UEd-HD-ZnJ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rVr-4u-4fe" appends="YES" id="Z9c-Fm-ffj"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="QI8-du-PiA" firstAttribute="centerY" secondItem="dhn-Re-9yM" secondAttribute="centerY" id="1IK-Tn-BGv"/>
+                                            <constraint firstAttribute="width" secondItem="dhn-Re-9yM" secondAttribute="height" multiplier="1:1" id="7Ig-Wi-XhO"/>
+                                            <constraint firstItem="QI8-du-PiA" firstAttribute="centerX" secondItem="dhn-Re-9yM" secondAttribute="centerX" id="VKU-lR-RsP"/>
+                                            <constraint firstItem="QI8-du-PiA" firstAttribute="height" secondItem="dhn-Re-9yM" secondAttribute="height" multiplier="0.4" id="xMH-ld-fyU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.24411311619718309" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4qG-Rx-OA2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                    <constraint firstItem="dhn-Re-9yM" firstAttribute="height" secondItem="x8n-Pj-kZa" secondAttribute="height" multiplier="0.8" id="89a-cV-jCL"/>
+                                    <constraint firstItem="dhn-Re-9yM" firstAttribute="centerY" secondItem="x8n-Pj-kZa" secondAttribute="centerY" id="9TL-ih-i7k"/>
+                                    <constraint firstItem="dhn-Re-9yM" firstAttribute="centerX" secondItem="x8n-Pj-kZa" secondAttribute="centerX" id="HKa-EK-9eV"/>
+                                    <constraint firstAttribute="width" secondItem="x8n-Pj-kZa" secondAttribute="height" multiplier="1:1" id="ZDq-Rg-rqX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="125"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riendo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlC-Rm-Nrk">
+                                <rect key="frame" x="10" y="696" width="394" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="70"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coloca el telefono cerca y revisa que el sonido sea claro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-cA-cmf">
+                                <rect key="frame" x="40" y="87" width="334" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona para grabar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-pg-PLr">
+                                <rect key="frame" x="10" y="538" width="394" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SlC-Rm-Nrk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1la-qk-ENp"/>
+                            <constraint firstItem="ccS-cA-cmf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="ClD-vc-U6S"/>
+                            <constraint firstItem="SlC-Rm-Nrk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="LnB-Wg-ljH"/>
+                            <constraint firstItem="5Lg-pg-PLr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WzJ-g0-k9f"/>
+                            <constraint firstItem="x8n-Pj-kZa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="Z7B-3s-8Mt"/>
+                            <constraint firstItem="SlC-Rm-Nrk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Zcd-Tq-bF5"/>
+                            <constraint firstItem="5Lg-pg-PLr" firstAttribute="top" secondItem="x8n-Pj-kZa" secondAttribute="bottom" constant="10" id="dIZ-Xu-Jm1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccS-cA-cmf" secondAttribute="trailing" constant="40" id="qDE-hm-T8L"/>
+                            <constraint firstItem="x8n-Pj-kZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0l-QA-b8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Lg-pg-PLr" secondAttribute="trailing" constant="10" id="svb-gF-vIB"/>
+                            <constraint firstItem="ccS-cA-cmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkS-vh-Y3V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.9319054484" green="0.32043215629999999" blue="0.44795757530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.95926386119999996" green="0.43602174519999998" blue="0.5341427326" alpha="0.95796654929577463" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCardView" destination="QI8-du-PiA" id="i6r-e2-vYm"/>
+                        <outlet property="resultLabel" destination="SlC-Rm-Nrk" id="Rds-CU-fCO"/>
+                        <outlet property="statusLabel" destination="5Lg-pg-PLr" id="iYw-KV-ImN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rVr-4u-4fe">
+                    <connections>
+                        <action selector="cardButtonPressed:" destination="BYZ-38-t0r" id="Y6f-zW-EhC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>

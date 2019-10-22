@@ -118,6 +118,56 @@ A machine learning model that has been trained to recognize images. When you giv
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
 | ![alt text](https://user-images.githubusercontent.com/42153044/67133718-b8a93080-f1d3-11e9-94f9-98964723e1b2.png) | ![alt text](https://user-images.githubusercontent.com/42153044/67133719-b8a93080-f1d3-11e9-87d4-55be10f0cb85.png) |
 
+## [5 - Machine Learning en audio](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/4%20-%20Image%20Predictor)
+
+Aplicación basada en CoreML entrenada para clasificar audio en stream
+
+### Acerca del modelo
+
+Modelo entrenado con más de 400 audios de diferentes bebés y entornos
+
+#### Nombre
+
+[BabySoundClassifier.mlmodel](https://github.com/ColeMacGrath/SwiftFromScratch/blob/master/4%20-%20Image%20Predictor/AnimalsImageClassifier.mlmodel)
+
+#### Tipo
+
+Sound Analysis Preprocessing → Neural Network → GLM Classifier
+
+#### Tamaño
+
+4.8 MB
+
+#### Descripción
+
+A machine learning model that has been trained to classify sounds.
+
+#### Parámetros
+
+##### Inputs:
+
+- audioSamples (MultiArray (Float32 15600)): Input audio samples to be classified
+
+#### Outputs
+
+- classLabelProbs (String -> Double): Probability of each category
+- classLabel (String): Most likely sound category
+
+## Animales a determinar
+
+| Animal  | Número de audios | Tamaño original |
+| :-----: | :--------------: | :-------------: |
+| Crying  |       4908       |     61.3 MB     |
+| Silence |       2673       |     43.6 MB     |
+|  Noise  |       1484       |      62 MB      |
+|  Laugh  |       2465       |     73.1 MB     |
+
+## Screenshots
+
+| ![alt text](https://user-images.githubusercontent.com/42153044/67257548-1a76ce00-f452-11e9-9760-d1fdd5af9afb.png) | ![alt text](https://user-images.githubusercontent.com/42153044/67257549-1a76ce00-f452-11e9-90e7-534d45c195f6.png) |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| ![alt text](https://user-images.githubusercontent.com/42153044/67257550-1a76ce00-f452-11e9-8f3d-cbf0efcd61b3.png) |                                                              |
+
 # Utilidades
 
 * [Pixaby - Galería de imágenes en alta resolución](https://pixabay.com)
