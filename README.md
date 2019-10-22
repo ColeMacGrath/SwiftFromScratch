@@ -88,7 +88,7 @@ A machine learning model that has been trained to recognize images. When you giv
 
 #### Parámetros
 
-##### Inputs:
+#### Inputs:
 
 - Image (Color 299x299): Input image to be classified
 
@@ -144,7 +144,7 @@ A machine learning model that has been trained to classify sounds.
 
 #### Parámetros
 
-##### Inputs:
+#### Inputs:
 
 - audioSamples (MultiArray (Float32 15600)): Input audio samples to be classified
 
@@ -157,10 +157,10 @@ A machine learning model that has been trained to classify sounds.
 
 | Nombre del audio | Número de audios | Tamaño original |
 | :--------------: | :--------------: | :-------------: |
-|      Crying      |       4908       |     61.3 MB     |
-|     Silence      |       2673       |     43.6 MB     |
-|      Noise       |       1484       |      62 MB      |
-|      Laugh       |       2465       |     73.1 MB     |
+|      Crying      |       109        |     4.9 MB      |
+|     Silence      |       109        |     4.9 MB      |
+|      Noise       |       109        |     4.9 MB      |
+|      Laugh       |       109        |     4.9 MB      |
 
 ## Screenshots
 
