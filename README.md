@@ -155,12 +155,12 @@ A machine learning model that has been trained to classify sounds.
 
 ## Animales a determinar
 
-| Animal  | Número de audios | Tamaño original |
-| :-----: | :--------------: | :-------------: |
-| Crying  |       4908       |     61.3 MB     |
-| Silence |       2673       |     43.6 MB     |
-|  Noise  |       1484       |      62 MB      |
-|  Laugh  |       2465       |     73.1 MB     |
+| Nombre del audio | Número de audios | Tamaño original |
+| :--------------: | :--------------: | :-------------: |
+|      Crying      |       4908       |     61.3 MB     |
+|     Silence      |       2673       |     43.6 MB     |
+|      Noise       |       1484       |      62 MB      |
+|      Laugh       |       2465       |     73.1 MB     |
 
 ## Screenshots
 
