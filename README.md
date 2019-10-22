@@ -118,7 +118,7 @@ A machine learning model that has been trained to recognize images. When you giv
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
 | ![alt text](https://user-images.githubusercontent.com/42153044/67133718-b8a93080-f1d3-11e9-94f9-98964723e1b2.png) | ![alt text](https://user-images.githubusercontent.com/42153044/67133719-b8a93080-f1d3-11e9-87d4-55be10f0cb85.png) |
 
-## [5 - Machine Learning en audio](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/4%20-%20Image%20Predictor)
+## [5 - Machine Learning en audio](https://github.com/ColeMacGrath/SwiftFromScratch/tree/master/5%20-BabyListener)
 
 Aplicación basada en CoreML entrenada para clasificar audio en stream
 
@@ -128,7 +128,7 @@ Modelo entrenado con más de 400 audios de diferentes bebés y entornos
 
 #### Nombre
 
-[BabySoundClassifier.mlmodel](https://github.com/ColeMacGrath/SwiftFromScratch/blob/master/4%20-%20Image%20Predictor/AnimalsImageClassifier.mlmodel)
+[BabySoundClassifier.mlmodel](https://github.com/ColeMacGrath/SwiftFromScratch/blob/master/5%20-BabyListener/BabyListener/BabySoundClassifier.mlmodel)
 
 #### Tipo
 
