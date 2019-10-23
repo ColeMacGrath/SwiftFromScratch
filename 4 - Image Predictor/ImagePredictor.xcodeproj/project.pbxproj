@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B33DD86A235A7DED0013BADA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DD869235A7DED0013BADA /* ResultViewController.swift */; };
-		B33DD86C235A7E2E0013BADA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DD86B235A7E2E0013BADA /* ImagePicker.swift */; };
+		B33DD866235A65000013BADA /* AnimalsImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B33DD865235A65000013BADA /* AnimalsImageClassifier.mlmodel */; };
+		B33DD868235A73960013BADA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DD867235A73960013BADA /* ImagePicker.swift */; };
 		B382EA302357D2F7007C1495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382EA2F2357D2F7007C1495 /* AppDelegate.swift */; };
 		B382EA322357D2F7007C1495 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382EA312357D2F7007C1495 /* SceneDelegate.swift */; };
+		B382EA342357D2F7007C1495 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382EA332357D2F7007C1495 /* ResultViewController.swift */; };
 		B382EA372357D2F7007C1495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B382EA352357D2F7007C1495 /* Main.storyboard */; };
 		B382EA392357D2FA007C1495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B382EA382357D2FA007C1495 /* Assets.xcassets */; };
 		B382EA3C2357D2FA007C1495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B382EA3A2357D2FA007C1495 /* LaunchScreen.storyboard */; };
@@ -20,11 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B33DD869235A7DED0013BADA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		B33DD86B235A7E2E0013BADA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B33DD865235A65000013BADA /* AnimalsImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AnimalsImageClassifier.mlmodel; sourceTree = "<group>"; };
+		B33DD867235A73960013BADA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B382EA2C2357D2F7007C1495 /* ImagePredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B382EA2F2357D2F7007C1495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B382EA312357D2F7007C1495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B382EA332357D2F7007C1495 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B382EA362357D2F7007C1495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B382EA382357D2FA007C1495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B382EA3B2357D2FA007C1495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C7AC8E2357EA2F00B74572 /* ChooseViewController.swift */,
-				B33DD869235A7DED0013BADA /* ResultViewController.swift */,
+				B382EA332357D2F7007C1495 /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -104,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				B382EA432357D424007C1495 /* Util.swift */,
-				B33DD86B235A7E2E0013BADA /* ImagePicker.swift */,
 				B3C7AC902357EA9200B74572 /* ChooseCollectionViewCell.swift */,
+				B33DD867235A73960013BADA /* ImagePicker.swift */,
+				B33DD865235A65000013BADA /* AnimalsImageClassifier.mlmodel */,
 				B382EA382357D2FA007C1495 /* Assets.xcassets */,
 			);
 			path = Utilities;
@@ -182,11 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B382EA342357D2F7007C1495 /* ResultViewController.swift in Sources */,
 				B382EA302357D2F7007C1495 /* AppDelegate.swift in Sources */,
-				B33DD86A235A7DED0013BADA /* ResultViewController.swift in Sources */,
 				B382EA322357D2F7007C1495 /* SceneDelegate.swift in Sources */,
-				B33DD86C235A7E2E0013BADA /* ImagePicker.swift in Sources */,
+				B33DD866235A65000013BADA /* AnimalsImageClassifier.mlmodel in Sources */,
 				B3C7AC912357EA9200B74572 /* ChooseCollectionViewCell.swift in Sources */,
+				B33DD868235A73960013BADA /* ImagePicker.swift in Sources */,
 				B3C7AC8F2357EA2F00B74572 /* ChooseViewController.swift in Sources */,
 				B382EA442357D424007C1495 /* Util.swift in Sources */,
 			);

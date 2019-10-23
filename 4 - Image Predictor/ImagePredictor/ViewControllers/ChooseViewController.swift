@@ -11,10 +11,12 @@ import UIKit
 class ChooseViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var imagePicker: ImagePicker!
+    var selectedImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
     }
 
 }
@@ -48,6 +50,22 @@ extension ChooseViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "chooseImageVC", sender: nil)
+        self.imagePicker.present(from: self.view)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "chooseImageVC" {
+            guard let viewController = segue.destination as? ResultViewController else { return }
+            viewController.image = self.selectedImage
+        }
+    }
+}
+
+extension ChooseViewController: ImagePickerDelegate {
+    func didSelect(image: UIImage?) {
+        if image != nil {
+            self.selectedImage = image
+            performSegue(withIdentifier: "chooseImageVC", sender: nil)
+        }
     }
 }

@@ -23,17 +23,17 @@
                                         <rect key="frame" x="10" y="319.66666666666663" width="295" height="48.333333333333314"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-tY-M3D">
-                                                <rect key="frame" x="0.0" y="1.3333333333333712" width="295" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="48.333333333333336"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel de seguridad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbs-1c-rFw">
-                                                        <rect key="frame" x="55.666666666666671" y="0.0" width="183.66666666666663" height="25.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Nivel de seguridad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbs-1c-rFw">
+                                                        <rect key="frame" x="51.666666666666686" y="0.0" width="192" height="24.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                                         <color key="textColor" red="0.54568034409999999" green="0.52264863250000004" blue="0.62876582150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stu-o9-hOV">
-                                                        <rect key="frame" x="127.66666666666666" y="25.666666666666629" width="40" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <rect key="frame" x="124" y="24.666666666666686" width="47" height="23.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -41,6 +41,9 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-Po-w8j">
+                                        <rect key="frame" x="0.0" y="45" width="315" height="264.66666666666669"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Euw-l7-6U0">
                                         <rect key="frame" x="15" y="10" width="65.333333333333329" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -48,9 +51,6 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="-1" height="1"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-Po-w8j">
-                                        <rect key="frame" x="0.0" y="45" width="315" height="264.66666666666669"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -94,6 +94,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I78-jY-FJq">
                                         <rect key="frame" x="115" y="0.0" width="180" height="60"/>
+                                        <connections>
+                                            <action selector="newImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGj-Ga-p7M"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.45594924689999999" green="0.328957051" blue="0.89387047289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -141,10 +144,15 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="8ba-aD-num"/>
+                    <connections>
+                        <outlet property="choosenImageView" destination="Eor-Po-w8j" id="1MV-Rk-ada"/>
+                        <outlet property="predictionLabel" destination="stu-o9-hOV" id="Qjg-Jz-dlJ"/>
+                        <outlet property="resultLabel" destination="Euw-l7-6U0" id="NIV-J5-dQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="108.62068965517241"/>
+            <point key="canvasLocation" x="1640.8" y="108.62068965517241"/>
         </scene>
         <!--Escoge-->
         <scene sceneID="xfa-3G-n2E">
@@ -289,7 +297,7 @@
                     <navigationItem key="navigationItem" title="Escoge" id="eZB-0j-5KY"/>
                     <connections>
                         <outlet property="collectionView" destination="sV8-Zb-J2b" id="s8r-i2-NPh"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="feW-P7-c4D"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="chooseImageVC" id="BPE-Yi-H4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8py-Yd-1h9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
