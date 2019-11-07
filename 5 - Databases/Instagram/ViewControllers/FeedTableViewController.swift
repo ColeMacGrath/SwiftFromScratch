@@ -19,6 +19,9 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
         
     }
+    
+    //10.214.8.38
+    //10.214.8.1
 
     // MARK: - Table view data source
 
