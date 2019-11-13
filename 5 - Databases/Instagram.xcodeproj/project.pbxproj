@@ -13,6 +13,10 @@
 		B31332D2236FA93C00C13AA9 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31332D1236FA93C00C13AA9 /* RegisterTableViewController.swift */; };
 		B31332D4236FAAF000C13AA9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31332D3236FAAF000C13AA9 /* InitialViewController.swift */; };
 		B31332D6236FB8E600C13AA9 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31332D5236FB8E600C13AA9 /* TextViewTableViewCell.swift */; };
+		B3163DEA237B418200EA0EFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163DE9237B418200EA0EFC /* DatabaseService.swift */; };
+		B3163DEC237B44B700EA0EFC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163DEB237B44B700EA0EFC /* User.swift */; };
+		B3163DEE237B4AE200EA0EFC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163DED237B4AE200EA0EFC /* Post.swift */; };
+		B3163DF0237B4FE700EA0EFC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163DEF237B4FE700EA0EFC /* Comment.swift */; };
 		B331D0ED236545DE007CE38F /* CreatePostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B331D0EC236545DE007CE38F /* CreatePostTableViewController.swift */; };
 		B34465272364AB2800DD05DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34465262364AB2800DD05DE /* ProfileViewController.swift */; };
 		B34465292364B3F400DD05DE /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34465282364B3F400DD05DE /* PictureCollectionViewCell.swift */; };
@@ -42,6 +46,10 @@
 		B31332D1236FA93C00C13AA9 /* RegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
 		B31332D3236FAAF000C13AA9 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		B31332D5236FB8E600C13AA9 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		B3163DE9237B418200EA0EFC /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		B3163DEB237B44B700EA0EFC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3163DED237B4AE200EA0EFC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B3163DEF237B4FE700EA0EFC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B331D0EC236545DE007CE38F /* CreatePostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreatePostTableViewController.swift; path = Instagram/ViewControllers/CreatePostTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B34465262364AB2800DD05DE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B34465282364B3F400DD05DE /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -188,6 +196,10 @@
 			isa = PBXGroup;
 			children = (
 				B3DC44F12374B0700025A10F /* AuthService.swift */,
+				B3163DE9237B418200EA0EFC /* DatabaseService.swift */,
+				B3163DEB237B44B700EA0EFC /* User.swift */,
+				B3163DED237B4AE200EA0EFC /* Post.swift */,
+				B3163DEF237B4FE700EA0EFC /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,11 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B347EE1C2363F1FE009F5282 /* FeedTableViewCell.swift in Sources */,
+				B3163DF0237B4FE700EA0EFC /* Comment.swift in Sources */,
+				B3163DEE237B4AE200EA0EFC /* Post.swift in Sources */,
 				B375E287236403E600C06088 /* PostTableViewController.swift in Sources */,
 				B347EE042363EC91009F5282 /* AppDelegate.swift in Sources */,
 				B375E28B2364041C00C06088 /* CommentTableViewCell.swift in Sources */,
 				B30F9FEC2369DAE7001F3632 /* DescriptionTableViewCell.swift in Sources */,
 				B3785E5F236F6180009F73CA /* LoginTableViewController.swift in Sources */,
+				B3163DEA237B418200EA0EFC /* DatabaseService.swift in Sources */,
 				B3DC44F22374B0700025A10F /* AuthService.swift in Sources */,
 				B347EE1A2363EE7A009F5282 /* Util.swift in Sources */,
 				B31332D4236FAAF000C13AA9 /* InitialViewController.swift in Sources */,
@@ -332,6 +347,7 @@
 				B311A7F22367DB3100423D6E /* ImageTableViewCell.swift in Sources */,
 				B347EE182363EE69009F5282 /* FeedTableViewController.swift in Sources */,
 				B31332D6236FB8E600C13AA9 /* TextViewTableViewCell.swift in Sources */,
+				B3163DEC237B44B700EA0EFC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

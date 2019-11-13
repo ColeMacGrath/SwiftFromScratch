@@ -15,7 +15,7 @@ typealias Completion = (_ errorMessage: String?, _ data: AnyObject?) -> Void
 class AuthService {
     private static let _shared = AuthService()
     
-    //Se retorna una instancia del objecto para obtener todas sus propiedades
+    //Se retorna una instancia del objeto para obtener todas sus propiedades
     static var shared: AuthService {
         return self._shared
     }
