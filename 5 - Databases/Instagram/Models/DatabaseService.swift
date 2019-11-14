@@ -80,7 +80,7 @@ class DatabaseService {
     }
     
     func like(post: Post, userUID: String) {
-        let likes = post.likes += 1
+        let likes: Int = post.likes + 1
         let postDict: Dictionary<String, AnyObject> = [
         "likes": likes as AnyObject
         ]
@@ -89,7 +89,7 @@ class DatabaseService {
     }
     
     func like(comment: Comment) {
-        let likes = comment.likes += 1
+        let likes: Int = comment.likes + 1
         let commentDict: Dictionary<String, AnyObject> = [
         "likes": likes as AnyObject
         ]

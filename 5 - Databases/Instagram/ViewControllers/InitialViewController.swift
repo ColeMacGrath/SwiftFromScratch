@@ -16,11 +16,15 @@ class InitialViewController: UIViewController {
         super.viewDidLoad()
         
         AuthService.shared.register(email: "email@email.com", password: "gfdfds32", onComplete: { (message, data) in
-            
             guard message == nil else {
                 //error: message
                 return //Si se llega aquí se sale de la función y no se envía a la pantalla principal
             }
+            
+            let alert = UIAlertController(title: "OK", message: "User successfully registered", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            
             //mostrar pantalla principal
         })
     }
