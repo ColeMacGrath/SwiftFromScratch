@@ -67,6 +67,8 @@ class AuthService {
                 onComplete?("Weak password", nil)
             case .networkError:
                 onComplete?("Network Error", nil)
+            case .userDisabled:
+                onComplete?("Ban", nil)
             default:
                 break
             }

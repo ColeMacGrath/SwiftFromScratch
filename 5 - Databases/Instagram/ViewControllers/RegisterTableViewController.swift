@@ -9,6 +9,10 @@
 import UIKit
 
 class RegisterTableViewController: UITableViewController {
+    
+    var emailTextField: UITextField!
+    var passwordField: UITextField!
+    var usernameField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +40,15 @@ class RegisterTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextFieldCell", for: indexPath) as! TextFieldTableViewCell
             if indexPath.row == 1 {
                 cell.textField.placeholder = "Enter your username"
+                self.usernameField = cell.textField
             } else if indexPath.row == 2 {
                 cell.textField.placeholder = "Type your mail"
                 cell.textField.keyboardType = .emailAddress
+                self.emailTextField = cell.textField
             } else {
                 cell.textField.placeholder = "Type your password"
                 cell.textField.isSecureTextEntry = true
+                self.passwordField = cell.textField
             }
             return cell
         default:
@@ -71,9 +78,23 @@ class RegisterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 4 {
-            guard let navigationController = storyboard?.instantiateViewController(withIdentifier: "MainVC") else { return }
-            navigationController.modalPresentationStyle = .fullScreen
-            present(navigationController, animated: true)
+            AuthService.shared.register(email: emailTextField.text ?? "", password: passwordField.text ?? "", onComplete: { (message, data) in
+                guard message == nil else {
+                    let alert = UIAlertController(title: "Error found", message: message, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                    return
+                }
+                
+                //mostrar pantalla principal
+                guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") else { return }
+                viewController.modalPresentationStyle = .fullScreen
+                self.present(viewController, animated: true)
+                
+            })
+            
+            
+            
         } else if indexPath.row == 5 {
             dismiss(animated: true, completion: nil)
         }

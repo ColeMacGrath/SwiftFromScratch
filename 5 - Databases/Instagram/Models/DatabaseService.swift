@@ -51,11 +51,12 @@ class DatabaseService {
     
     }
     
+    
     func saveProfilePictureRef(userUID: String, url: URL) {
         let pictureRef: Dictionary<String, AnyObject> = [
             "profilePicture": url.absoluteString as AnyObject
         ]
-        
+
         self.usersRef.child(userUID).child("profileURL").setValue(pictureRef)
     }
     
