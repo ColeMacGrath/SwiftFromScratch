@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class FeedTableViewController: UITableViewController {
     
@@ -17,7 +18,26 @@ class FeedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+            getPosts()
+    }
+    
+    
+    func getPosts() {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        DatabaseService.shared.postsRef.observeSingleEvent(of: .value) { (snapshot) in
+            
+            for dict in snapshot.value as? Array<Dictionary<String, AnyObject>> ?? Array() {
+                guard let myDict = dict as? Dictionary<String, AnyObject> else { return }
+                    
+                   if let title = myDict["title"] as? String,
+                    let description = dict["description"] as? String {
+                        print(title)
+                        print(description)
+                    }
+                }
+            }
+            
+            
     }
 
     // MARK: - Table view data source

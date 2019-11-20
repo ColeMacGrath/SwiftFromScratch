@@ -87,13 +87,15 @@ class RegisterTableViewController: UITableViewController {
                 }
                 
                 //mostrar pantalla principal
+                
+                let user = User(uid: "", name: self.usernameField.text ?? "", username: self.usernameField.text ?? "", email: self.emailTextField.text ?? "")
+                DatabaseService.shared.create(user: user)
+                
                 guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") else { return }
                 viewController.modalPresentationStyle = .fullScreen
                 self.present(viewController, animated: true)
                 
             })
-            
-            
             
         } else if indexPath.row == 5 {
             dismiss(animated: true, completion: nil)

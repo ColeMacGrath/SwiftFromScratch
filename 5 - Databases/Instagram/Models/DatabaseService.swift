@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseDatabase
 import FirebaseStorage
+import FirebaseAuth
 
 class DatabaseService {
     private static let _shared = DatabaseService()
@@ -42,6 +43,9 @@ class DatabaseService {
     }
     
     func create(user: User) {
+        
+        user.uid = Auth.auth().currentUser?.uid ?? ""
+        
         let userDict: Dictionary<String, AnyObject> = [
             "name": user.name as AnyObject,
             "mail": user.email as AnyObject,
