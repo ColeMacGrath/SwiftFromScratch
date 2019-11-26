@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vrv-FP-R79">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +23,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="F4o-ow-KMR" customClass="CardImage" customModule="Instagram" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F4o-ow-KMR" customClass="CardImage" customModule="Instagram" customModuleProvider="target">
                                             <rect key="frame" x="20" y="21" width="374" height="245"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="F4o-ow-KMR" secondAttribute="height" multiplier="1:1.5" id="GDo-mc-YLN"/>
@@ -657,14 +657,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="Mxa-eG-bO1" customClass="ImageTableViewCell" customModule="Instagram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="526"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mxa-eG-bO1" id="OT8-pL-oc1">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="526"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="epY-EX-rYb">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="526"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="epY-EX-rYb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -676,7 +676,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" rowHeight="80" id="oqJ-wY-ih0" customClass="TextFieldTableViewCell" customModule="Instagram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="554" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="328" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oqJ-wY-ih0" id="aI5-Is-p1T">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -715,7 +715,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionCell" rowHeight="110" id="vv3-g5-Cta" customClass="TextViewTableViewCell" customModule="Instagram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="634" width="414" height="110"/>
+                                <rect key="frame" x="0.0" y="408" width="414" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vv3-g5-Cta" id="Vkm-d6-BPz">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -1002,6 +1002,7 @@
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="picture" width="188.33332824707031" height="117.66666412353516"/>
         <image name="picture-3" width="2560" height="1440"/>
+        <image name="placeholder" width="533.33331298828125" height="300"/>
         <image name="profile" width="440.33334350585938" height="525.33331298828125"/>
     </resources>
 </document>

@@ -33,6 +33,7 @@
 		B3785E5F236F6180009F73CA /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3785E5E236F6180009F73CA /* LoginTableViewController.swift */; };
 		B3785E61236F6223009F73CA /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3785E60236F6223009F73CA /* HeaderTableViewCell.swift */; };
 		B3785E63236F6281009F73CA /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3785E62236F6281009F73CA /* TextFieldTableViewCell.swift */; };
+		B39EB50D238CD74300CFFF4E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EB50C238CD74300CFFF4E /* ImagePicker.swift */; };
 		B3DC44F02374AB3C0025A10F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3DC44EF2374AB3C0025A10F /* GoogleService-Info.plist */; };
 		B3DC44F22374B0700025A10F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC44F12374B0700025A10F /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		B3785E5E236F6180009F73CA /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		B3785E60236F6223009F73CA /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		B3785E62236F6281009F73CA /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		B39EB50C238CD74300CFFF4E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B3D6904923640BC40091DAC3 /* Instagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instagram.entitlements; sourceTree = "<group>"; };
 		B3DC44EF2374AB3C0025A10F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3DC44F12374B0700025A10F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -114,13 +116,13 @@
 		B34465222364A26800DD05DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B31332D3236FAAF000C13AA9 /* InitialViewController.swift */,
+				B3785E5E236F6180009F73CA /* LoginTableViewController.swift */,
+				B31332D1236FA93C00C13AA9 /* RegisterTableViewController.swift */,
 				B347EE172363EE69009F5282 /* FeedTableViewController.swift */,
 				B375E286236403E600C06088 /* PostTableViewController.swift */,
 				B34465262364AB2800DD05DE /* ProfileViewController.swift */,
 				B331D0EC236545DE007CE38F /* CreatePostTableViewController.swift */,
-				B3785E5E236F6180009F73CA /* LoginTableViewController.swift */,
-				B31332D1236FA93C00C13AA9 /* RegisterTableViewController.swift */,
-				B31332D3236FAAF000C13AA9 /* InitialViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B3DC44EF2374AB3C0025A10F /* GoogleService-Info.plist */,
+				B39EB50C238CD74300CFFF4E /* ImagePicker.swift */,
 				B347EE192363EE7A009F5282 /* Util.swift */,
 				B347EE0C2363EC9C009F5282 /* Assets.xcassets */,
 			);
@@ -346,6 +349,7 @@
 				B34465292364B3F400DD05DE /* PictureCollectionViewCell.swift in Sources */,
 				B311A7F22367DB3100423D6E /* ImageTableViewCell.swift in Sources */,
 				B347EE182363EE69009F5282 /* FeedTableViewController.swift in Sources */,
+				B39EB50D238CD74300CFFF4E /* ImagePicker.swift in Sources */,
 				B31332D6236FB8E600C13AA9 /* TextViewTableViewCell.swift in Sources */,
 				B3163DEC237B44B700EA0EFC /* User.swift in Sources */,
 			);
@@ -497,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R27L3GB44P;
 				INFOPLIST_FILE = Instagram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R27L3GB44P;
 				INFOPLIST_FILE = Instagram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

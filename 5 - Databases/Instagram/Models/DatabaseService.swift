@@ -35,7 +35,7 @@ class DatabaseService {
     }
     
     var mainStorageRef: StorageReference {
-        return Storage.storage().reference(forURL: "gs://jdksad")
+        return Storage.storage().reference(forURL: "gs://instagram-e3772.appspot.com")
     }
     
     var imageStorageRef: StorageReference {
@@ -55,6 +55,13 @@ class DatabaseService {
     
     }
     
+    func savePictureRef(userUID: String, url: URL, imageName: String) {
+        let pictureRef: Dictionary<String, AnyObject> = [
+            "name": imageName as AnyObject,
+            "url": url.absoluteString as AnyObject
+        ]
+        self.usersRef.child(userUID).child("posts").setValue(pictureRef)
+    }
     
     func saveProfilePictureRef(userUID: String, url: URL) {
         let pictureRef: Dictionary<String, AnyObject> = [
