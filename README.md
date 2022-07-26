@@ -2,7 +2,7 @@
 
 ## [0 - Básicos](https://github.com/ColeMacGrath/SwiftFromScratch/tree/BBVA/0%20-%20Básicos)
 
-Revisando temas básicos de programación en C++ y su compración con Swift
+Revisando temas básicos de programación en JavaScript y su compración con Swift
 
 |           Tema           |
 | :----------------------: |
