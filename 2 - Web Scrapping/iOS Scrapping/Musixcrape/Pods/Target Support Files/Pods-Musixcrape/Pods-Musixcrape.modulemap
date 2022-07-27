@@ -1,6 +1,0 @@
-framework module Pods_Musixcrape {
-  umbrella header "Pods-Musixcrape-umbrella.h"
-
-  export *
-  module * { export * }
-}
