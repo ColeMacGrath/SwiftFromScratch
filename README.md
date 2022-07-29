@@ -19,4 +19,3 @@ Creación de una interfaz básica y una peticicón a hacia una API Rest para la 
 
 | ![alt text](https://user-images.githubusercontent.com/42153044/181817887-42bf51c4-ede9-4832-9e8d-63b87675f731.png) | ![alt text](https://user-images.githubusercontent.com/42153044/181817881-e9c8ba1d-fb17-4b6b-af22-39f750497d55.png) | ![alt text](https://user-images.githubusercontent.com/42153044/181817877-c7ff1c06-c29e-42b3-8e09-3b35898ee29c.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|                                                              |                                                              |                                                              |
